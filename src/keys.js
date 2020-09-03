@@ -1,13 +1,13 @@
-import { TMDB_DEV_KEY } from './devKeys';
+import { NEWS_DEV_KEY } from './devKeys';
 
-let TMDB_KEY = '';
+let NEWS_KEY = '';
 
 if (process.env.NODE_ENV === 'production') {
-  TMDB_KEY = process.env.REACT_APP_NEXT_PUBLIC_TMDB_PROD_KEY;
+  NEWS_KEY = process.env.REACT_APP_NEXT_PUBLIC_NEWS_PROD_KEY;
 } else {
-  TMDB_DEV_KEY
-    ? (TMDB_KEY = TMDB_DEV_KEY)
-    : (TMDB_KEY = process.env.REACT_APP_NEXT_PUBLIC_TMDB_DEV_VERCEL_KEY);
+  NEWS_DEV_KEY
+    ? (NEWS_KEY = NEWS_DEV_KEY)
+    : (NEWS_KEY = process.env.REACT_APP_NEXT_PUBLIC_NEWS_DEV_VERCEL_KEY);
 }
 
-export default TMDB_KEY;
+export default NEWS_KEY;

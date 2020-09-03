@@ -1,7 +1,12 @@
 import React from 'react';
+import Card from './Card';
 
 const NewsGrid = () => {
-  return <div>NewsGrid</div>;
+  return (
+    <div>
+      <Card />
+    </div>
+  );
 };
 
 export default NewsGrid;

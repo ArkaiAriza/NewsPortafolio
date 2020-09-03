@@ -1,7 +1,12 @@
 import React from 'react';
+import PopOverMenu from './PopOverMenu';
 
-const Modal = () => {
-  return <div>Modal</div>;
+const Modal = ({ children }) => {
+  return (
+    <div>
+      <PopOverMenu>{children}</PopOverMenu>
+    </div>
+  );
 };
 
 export default Modal;
