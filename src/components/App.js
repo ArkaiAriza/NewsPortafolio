@@ -9,9 +9,20 @@ import LandingPage from './LandingPage';
 import NewsPage from './NewsPage';
 import ResultsPage from './ResultsPage';
 
+import { ThemeSwitcherProvider } from 'react-css-theme-switcher';
+
+const themes = {
+  dark: `${process.env.PUBLIC_URL}/dark-theme.css`,
+  light: `${process.env.PUBLIC_URL}/light-theme.css`,
+};
+
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeSwitcherProvider
+      themeMap={themes}
+      defaultTheme="light"
+      insertionPoint="styles-insertion-point"
+    >
       <div>
         <BrowserRouter>
           <NewsProvider>
@@ -22,7 +33,7 @@ const App = () => {
           </NewsProvider>
         </BrowserRouter>
       </div>
-    </ThemeProvider>
+    </ThemeSwitcherProvider>
   );
 };
 
