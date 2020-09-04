@@ -1,8 +1,6 @@
 import React from 'react';
-import { ThemeProvider } from '@material-ui/styles';
 
 import { BrowserRouter, Route } from 'react-router-dom';
-import { theme } from '../theme';
 import { NewsProvider } from '../contexts/NewsContext';
 import Header from './Header';
 import LandingPage from './LandingPage';

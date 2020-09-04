@@ -4,7 +4,7 @@ import SideMenu from './SideMenu';
 import SearchBar from './SearchBar';
 
 import { useThemeSwitcher } from 'react-css-theme-switcher';
-import { Switch, Input, Menu } from 'antd';
+import { Switch, Menu } from 'antd';
 
 const { SubMenu } = Menu;
 
