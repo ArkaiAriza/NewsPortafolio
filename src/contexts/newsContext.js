@@ -13,8 +13,8 @@ const NewsContext = React.createContext({
 
 export const NewsProvider = ({ children }) => {
   const [newsList, setNewsList] = useState([]);
-  const [selectedNew, setselectedNew] = useState({});
-  const [query, setQuery] = useState({});
+  const [selectedNew, setSelectedNew] = useState({});
+  const [query, setQuery] = useState({ q: '', country: 'us' });
   const [category, setCategory] = useState('general');
   const [source, setSource] = useState('');
   const [country, setCountry] = useState('us');
@@ -30,12 +30,43 @@ export const NewsProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    //getNewsList();
+    const initNewsList = async () => {
+      const response = await axios.get(`/v2/top-headlines`, {
+        params: {
+          country: 'us',
+          category: 'general',
+          pageSize: 21,
+        },
+      });
+      setNewsList(response.data.articles);
+    };
+    //initNewsList();
   }, []);
+
+  useEffect(() => {
+    const searchNews = async () => {
+      const response = await axios.get(`/v2/top-headlines`, {
+        params: {
+          q: query.q,
+          country: query.country,
+        },
+      });
+      setNewsList(response.data.articles);
+    };
+    searchNews();
+  }, [query]);
 
   return (
     <NewsContext.Provider
-      value={{ newsList, selectedNew, query, category, source, getNewsList }}
+      value={{
+        newsList,
+        selectedNew,
+        query,
+        setQuery,
+        category,
+        source,
+        getNewsList,
+      }}
     >
       {children}
     </NewsContext.Provider>

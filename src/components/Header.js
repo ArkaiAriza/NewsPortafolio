@@ -30,18 +30,17 @@ const Header = () => {
 
   return (
     <div>
-      <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
-        <Menu.Item key="sideMenu">
+      <Menu onClick={handleClick} selectedKeys={[current]} mode='horizontal'>
+        <Menu.Item key='sideMenu'>
           <SideMenu />
         </Menu.Item>
-        <Menu.Item key="popOverMenu">
+        <Menu.Item key='popOverMenu'>
           <PopOverMenu />
         </Menu.Item>
-        <Menu.Item key="darkModeToggle">
+        <Menu.Item key='darkModeToggle'>
           <Switch checked={isDarkMode} onChange={toggleTheme} />
         </Menu.Item>
       </Menu>
-      <SearchBar />
     </div>
   );
 };

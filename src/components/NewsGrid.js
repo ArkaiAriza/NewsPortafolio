@@ -1,12 +1,22 @@
 import React from 'react';
 import Card from './Card';
 
-const NewsGrid = () => {
-  return (
-    <div>
-      <Card />
-    </div>
-  );
+import { Row, Col } from 'antd';
+
+const NewsGrid = ({ items }) => {
+  console.log(items);
+
+  const renderNews = () => {
+    return items.map((item, index) => {
+      return (
+        <Col lg={12} xs={24} key={item.title + index}>
+          <Card item={item}></Card>
+        </Col>
+      );
+    });
+  };
+
+  return <Row style={{ padding: '' }}>{renderNews()}</Row>;
 };
 
 export default NewsGrid;

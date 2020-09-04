@@ -1,13 +1,15 @@
 import React from 'react';
 
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 import { NewsProvider } from '../contexts/NewsContext';
 import Header from './Header';
+import SearchBar from './SearchBar';
 import LandingPage from './LandingPage';
 import NewsPage from './NewsPage';
 import ResultsPage from './ResultsPage';
 
 import { ThemeSwitcherProvider } from 'react-css-theme-switcher';
+import history from '../history';
 
 const themes = {
   dark: `${process.env.PUBLIC_URL}/dark-theme.css`,
@@ -18,18 +20,19 @@ const App = () => {
   return (
     <ThemeSwitcherProvider
       themeMap={themes}
-      defaultTheme="light"
-      insertionPoint="styles-insertion-point"
+      defaultTheme='light'
+      insertionPoint='styles-insertion-point'
     >
       <div>
-        <BrowserRouter>
+        <Router history={history}>
           <NewsProvider>
             <Header />
-            <Route path="/" exact component={LandingPage} />
-            <Route path="/results" exact component={ResultsPage} />
-            <Route path="/new" exact component={NewsPage} />
+            <SearchBar />
+            <Route path='/' exact component={LandingPage} />
+            <Route path='/results' exact component={ResultsPage} />
+            <Route path='/new' exact component={NewsPage} />
           </NewsProvider>
-        </BrowserRouter>
+        </Router>
       </div>
     </ThemeSwitcherProvider>
   );
