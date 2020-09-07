@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import history from '../history';
 
 import { Card as ACard, Typography } from 'antd';
+import NewsContext from '../contexts/NewsContext';
 
 const { Meta } = ACard;
 const { Paragraph, Title, Link } = Typography;
 
 const Card = ({ item }) => {
+  const { setSelectedNew } = useContext(NewsContext);
   return (
     <ACard
+      onClick={() => window.open(item.url, '_blank')}
       hoverable
       style={{
         margin: '5%',
@@ -15,12 +19,21 @@ const Card = ({ item }) => {
         display: 'flex',
         flexDirection: 'column',
       }}
-      cover={<img alt={item.title} src={item.urlToImage} />}
-      actions={[
+      cover={
+        <img
+          alt={item.title}
+          src={item.urlToImage}
+          onError={(ev) =>
+            (ev.target.src =
+              'https://www.ilac.com/wp-content/uploads/2019/06/placeholder-600x400.png')
+          }
+        />
+      }
+      /* actions={[
         <Link
           level={6}
           href={item.url}
-          target='_blank'
+          target="_blank"
           style={{
             maxHeight: '10%',
             margin: '0',
@@ -32,7 +45,7 @@ const Card = ({ item }) => {
           {item.url}
         </Link>,
       ]}
-      bodyStyle={{ flex: 1, paddingBottom: 0 }}
+      bodyStyle={{ flex: 1, paddingBottom: 0 }} */
     >
       <Meta
         title={

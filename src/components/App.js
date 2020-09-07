@@ -5,7 +5,6 @@ import { NewsProvider } from '../contexts/NewsContext';
 import Header from './Header';
 import SearchBar from './SearchBar';
 import LandingPage from './LandingPage';
-import NewsPage from './NewsPage';
 import ResultsPage from './ResultsPage';
 
 import { ThemeSwitcherProvider } from 'react-css-theme-switcher';
@@ -20,17 +19,16 @@ const App = () => {
   return (
     <ThemeSwitcherProvider
       themeMap={themes}
-      defaultTheme='light'
-      insertionPoint='styles-insertion-point'
+      defaultTheme="light"
+      insertionPoint="styles-insertion-point"
     >
       <div>
         <Router history={history}>
           <NewsProvider>
             <Header />
             <SearchBar />
-            <Route path='/' exact component={LandingPage} />
-            <Route path='/results' exact component={ResultsPage} />
-            <Route path='/new' exact component={NewsPage} />
+            <Route path="/" exact component={LandingPage} />
+            <Route path="/results/:search" exact component={ResultsPage} />
           </NewsProvider>
         </Router>
       </div>

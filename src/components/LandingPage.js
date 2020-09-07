@@ -531,10 +531,9 @@ const newsList = [
 
 const LandingPage = () => {
   //const { newsList } = useContext(NewsContext);
-  console.log(newsList);
   return (
     <div>
-      <Row justify='center'>
+      <Row justify="center">
         <Col xs={0} sm={0} md={20}>
           <Carousel items={newsList.slice(0, 5)} />
         </Col>
@@ -542,7 +541,7 @@ const LandingPage = () => {
           <Carousel items={newsList.slice(0, 5)} small />
         </Col>
       </Row>
-      <Row justify='center'>
+      <Row justify="center">
         <Col xs={24} sm={24} md={20}>
           <NewsGrid items={newsList.slice(5)} />
         </Col>

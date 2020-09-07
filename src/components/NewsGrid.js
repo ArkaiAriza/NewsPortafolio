@@ -4,8 +4,6 @@ import Card from './Card';
 import { Row, Col } from 'antd';
 
 const NewsGrid = ({ items }) => {
-  console.log(items);
-
   const renderNews = () => {
     return items.map((item, index) => {
       return (

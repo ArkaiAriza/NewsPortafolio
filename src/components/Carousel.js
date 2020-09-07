@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import { Carousel as ACarousel, Typography, Row, Col } from 'antd';
+import { Carousel as ACarousel, Typography } from 'antd';
 
 const { Title } = Typography;
 
@@ -20,14 +20,18 @@ const Carousel = ({ items, small }) => {
           <div style={contentStyle}>
             <img
               style={{
-                width: '100%',
+                width: small ? '100%' : 'fit-content',
                 maxWidth: '1200px',
                 margin: 'auto',
                 maxHeight: '800px',
                 height: 'auto',
               }}
               key={item.title}
-              src={item.urlToImage}
+              src={
+                item.urlToImage
+                  ? item.urlToImage
+                  : 'https://www.consultoraledesma.com.ar/wp-content/uploads/revslider/lookbook3-demo_slider/placeholder.jpg'
+              }
               alt={item.title}
             />
             <div
@@ -60,7 +64,7 @@ const Carousel = ({ items, small }) => {
   };
 
   return (
-    <ACarousel autoplay style={{ padding: '' }} dots={!small}>
+    <ACarousel style={{ padding: '' }} dots={!small}>
       {renderItems()}
     </ACarousel>
   );
