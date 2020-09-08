@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PopOverMenu from './PopOverMenu';
 import SideMenu from './SideMenu';
 import SearchBar from './SearchBar';
@@ -9,9 +9,11 @@ import { Switch, Menu } from 'antd';
 const { SubMenu } = Menu;
 
 const Header = () => {
-  const [isDarkMode, setIsDarkMode] = React.useState();
-  const [current, setCurrent] = React.useState();
+  const [isDarkMode, setIsDarkMode] = useState();
+  const [current, setCurrent] = useState();
   const { switcher, currentTheme, status, themes } = useThemeSwitcher();
+
+  const [sideToggle, setSideToggle] = useState(false);
 
   const toggleTheme = (isChecked) => {
     setIsDarkMode(isChecked);
@@ -24,15 +26,16 @@ const Header = () => {
   }
 
   const handleClick = (e) => {
-    console.log('click ', e);
     setCurrent(e.key);
   };
+
+  console.log(sideToggle);
 
   return (
     <div>
       <Menu onClick={handleClick} selectedKeys={[current]} mode='horizontal'>
-        <Menu.Item key='sideMenu'>
-          <SideMenu />
+        <Menu.Item key='sideMenu' onClick={() => setSideToggle(!sideToggle)}>
+          Countries
         </Menu.Item>
         <Menu.Item key='popOverMenu'>
           <PopOverMenu />
@@ -41,6 +44,8 @@ const Header = () => {
           <Switch checked={isDarkMode} onChange={toggleTheme} />
         </Menu.Item>
       </Menu>
+
+      <SideMenu visible={sideToggle} />
     </div>
   );
 };

@@ -28,13 +28,13 @@ const SearchBar = () => {
   const { searchNews } = useContext(NewsContext);
 
   return (
-    <Row justify="center">
-      <Col xs={24} sm={24} md={12}>
+    <Row justify='center'>
+      <Col xs={24} sm={24} md={16} lg={14}>
         <div style={styles.SearchBox}>
           <Search
             style={styles.searchBar}
             enterButton
-            placeholder="Search"
+            placeholder='Search'
             value={text}
             onChange={(e) => setText(e.target.value)}
             onSearch={() => handleSearch()}

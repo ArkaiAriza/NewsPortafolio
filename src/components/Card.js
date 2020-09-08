@@ -22,7 +22,11 @@ const Card = ({ item }) => {
       cover={
         <img
           alt={item.title}
-          src={item.urlToImage}
+          src={
+            item.image
+              ? item.image
+              : 'https://www.ilac.com/wp-content/uploads/2019/06/placeholder-600x400.png'
+          }
           onError={(ev) =>
             (ev.target.src =
               'https://www.ilac.com/wp-content/uploads/2019/06/placeholder-600x400.png')

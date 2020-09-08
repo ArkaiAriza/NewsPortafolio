@@ -20,7 +20,7 @@ const Carousel = ({ items, small }) => {
           <div style={contentStyle}>
             <img
               style={{
-                width: small ? '100%' : 'fit-content',
+                width: small ? '100%' : '-webkit-fill-available',
                 maxWidth: '1200px',
                 margin: 'auto',
                 maxHeight: '800px',
@@ -28,8 +28,8 @@ const Carousel = ({ items, small }) => {
               }}
               key={item.title}
               src={
-                item.urlToImage
-                  ? item.urlToImage
+                item.image
+                  ? item.image
                   : 'https://www.consultoraledesma.com.ar/wp-content/uploads/revslider/lookbook3-demo_slider/placeholder.jpg'
               }
               alt={item.title}

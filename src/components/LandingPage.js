@@ -8,524 +8,114 @@ import { Col, Row } from 'antd';
 
 const newsList = [
   {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
     description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
+      'Michigan health officials reported 441 new coronavirus cases and one new COVID-19 death on Tuesday, Sept. 8. The 24-hour case addition is the fewest since Aug. 21, though case data tends to be lower ...',
+    image: 'https://images.gnews.io/787e0aca6f6b3d373af31e9aecd976df',
+    publishedAt: '2020-09-08 13:09:00 UTC',
+    source: { name: 'MLive', url: 'https://www.mlive.com' },
+    title:
+      'Michigan reports 441 new coronavirus cases, 1 new death following holiday weekend',
     url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
+      'https://www.mlive.com/public-interest/2020/09/michigan-reports-441-new-coronavirus-cases-1-new-death-following-holiday-weekend.html',
   },
   {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description: 'With less than two months remaining until Election Days, ',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
     description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
+      'Michigan health officials reported 441 new coronavirus cases and one new COVID-19 death on Tuesday, Sept. 8. The 24-hour case addition is the fewest since Aug. 21, though case data tends to be lower ...',
+    image: 'https://images.gnews.io/787e0aca6f6b3d373af31e9aecd976df',
+    publishedAt: '2020-09-08 13:09:00 UTC',
+    source: { name: 'MLive', url: 'https://www.mlive.com' },
+    title:
+      'Michigan reports 441 new coronavirus cases, 1 new death following holiday weekend',
     url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
+      'https://www.mlive.com/public-interest/2020/09/michigan-reports-441-new-coronavirus-cases-1-new-death-following-holiday-weekend.html',
   },
   {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
     description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
+      'Michigan health officials reported 441 new coronavirus cases and one new COVID-19 death on Tuesday, Sept. 8. The 24-hour case addition is the fewest since Aug. 21, though case data tends to be lower ...',
+    image: 'https://images.gnews.io/787e0aca6f6b3d373af31e9aecd976df',
+    publishedAt: '2020-09-08 13:09:00 UTC',
+    source: { name: 'MLive', url: 'https://www.mlive.com' },
+    title:
+      'Michigan reports 441 new coronavirus cases, 1 new death following holiday weekend',
     url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
+      'https://www.mlive.com/public-interest/2020/09/michigan-reports-441-new-coronavirus-cases-1-new-death-following-holiday-weekend.html',
   },
   {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
     description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
+      'Michigan health officials reported 441 new coronavirus cases and one new COVID-19 death on Tuesday, Sept. 8. The 24-hour case addition is the fewest since Aug. 21, though case data tends to be lower ...',
+    image: 'https://images.gnews.io/787e0aca6f6b3d373af31e9aecd976df',
+    publishedAt: '2020-09-08 13:09:00 UTC',
+    source: { name: 'MLive', url: 'https://www.mlive.com' },
+    title:
+      'Michigan reports 441 new coronavirus cases, 1 new death following holiday weekend',
     url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
+      'https://www.mlive.com/public-interest/2020/09/michigan-reports-441-new-coronavirus-cases-1-new-death-following-holiday-weekend.html',
   },
   {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
     description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers.With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
+      'Michigan health officials reported 441 new coronavirus cases and one new COVID-19 death on Tuesday, Sept. 8. The 24-hour case addition is the fewest since Aug. 21, though case data tends to be lower ...',
+    image: 'https://images.gnews.io/787e0aca6f6b3d373af31e9aecd976df',
+    publishedAt: '2020-09-08 13:09:00 UTC',
+    source: { name: 'MLive', url: 'https://www.mlive.com' },
+    title:
+      'Michigan reports 441 new coronavirus cases, 1 new death following holiday weekend',
     url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
+      'https://www.mlive.com/public-interest/2020/09/michigan-reports-441-new-coronavirus-cases-1-new-death-following-holiday-weekend.html',
   },
   {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description: 'With less than two months remaining until Election Days, ',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
     description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
+      'Michigan health officials reported 441 new coronavirus cases and one new COVID-19 death on Tuesday, Sept. 8. The 24-hour case addition is the fewest since Aug. 21, though case data tends to be lower ...',
+    image: 'https://images.gnews.io/787e0aca6f6b3d373af31e9aecd976df',
+    publishedAt: '2020-09-08 13:09:00 UTC',
+    source: { name: 'MLive', url: 'https://www.mlive.com' },
+    title:
+      'Michigan reports 441 new coronavirus cases, 1 new death following holiday weekend',
     url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
+      'https://www.mlive.com/public-interest/2020/09/michigan-reports-441-new-coronavirus-cases-1-new-death-following-holiday-weekend.html',
   },
   {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
     description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
+      'Michigan health officials reported 441 new coronavirus cases and one new COVID-19 death on Tuesday, Sept. 8. The 24-hour case addition is the fewest since Aug. 21, though case data tends to be lower ...',
+    image: 'https://images.gnews.io/787e0aca6f6b3d373af31e9aecd976df',
+    publishedAt: '2020-09-08 13:09:00 UTC',
+    source: { name: 'MLive', url: 'https://www.mlive.com' },
+    title:
+      'Michigan reports 441 new coronavirus cases, 1 new death following holiday weekend',
     url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
+      'https://www.mlive.com/public-interest/2020/09/michigan-reports-441-new-coronavirus-cases-1-new-death-following-holiday-weekend.html',
   },
   {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
     description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
+      'Michigan health officials reported 441 new coronavirus cases and one new COVID-19 death on Tuesday, Sept. 8. The 24-hour case addition is the fewest since Aug. 21, though case data tends to be lower ...',
+    image: 'https://images.gnews.io/787e0aca6f6b3d373af31e9aecd976df',
+    publishedAt: '2020-09-08 13:09:00 UTC',
+    source: { name: 'MLive', url: 'https://www.mlive.com' },
+    title:
+      'Michigan reports 441 new coronavirus cases, 1 new death following holiday weekend',
     url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
+      'https://www.mlive.com/public-interest/2020/09/michigan-reports-441-new-coronavirus-cases-1-new-death-following-holiday-weekend.html',
   },
   {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
     description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
+      'Michigan health officials reported 441 new coronavirus cases and one new COVID-19 death on Tuesday, Sept. 8. The 24-hour case addition is the fewest since Aug. 21, though case data tends to be lower ...',
+    image: 'https://images.gnews.io/787e0aca6f6b3d373af31e9aecd976df',
+    publishedAt: '2020-09-08 13:09:00 UTC',
+    source: { name: 'MLive', url: 'https://www.mlive.com' },
+    title:
+      'Michigan reports 441 new coronavirus cases, 1 new death following holiday weekend',
     url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
+      'https://www.mlive.com/public-interest/2020/09/michigan-reports-441-new-coronavirus-cases-1-new-death-following-holiday-weekend.html',
   },
   {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
     description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
+      'Michigan health officials reported 441 new coronavirus cases and one new COVID-19 death on Tuesday, Sept. 8. The 24-hour case addition is the fewest since Aug. 21, though case data tends to be lower ...',
+    image: 'https://images.gnews.io/787e0aca6f6b3d373af31e9aecd976df',
+    publishedAt: '2020-09-08 13:09:00 UTC',
+    source: { name: 'MLive', url: 'https://www.mlive.com' },
     title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
+      'Michigan reports 441 new coronavirus cases, 1 new death following holiday weekend',
     url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
-  },
-  {
-    source: {
-      id: 'the-washington-post',
-      name: 'The Washington Post',
-    },
-    author: 'John Wagner',
-    title:
-      'Election 2020 live updates: Biden to speak on economic fallout of pandemic; Trump hosting diplomatic talks - The Washington Post',
-    description:
-      'With less than two months remaining until Election Days, both campaigns are also reacting to a bombshell report in the Atlantic that Trump called U.S. soldiers injured or killed in war “losers."',
-    url:
-      'https://www.washingtonpost.com/elections/2020/09/04/trump-biden-live-updates/',
-    urlToImage:
-      'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/09-03-2020/t_2b8b3f42d7614bb9ab4482d91bc9fc1a_name_01860b00_ee1f_11ea_bd08_1b10132b458f.jpg&w=1440',
-    publishedAt: '2020-09-04T14:02:00Z',
-    content:
-      'Secretary of State Mike Pompeo warned Friday that there is a real risk associated with widespread mail-in balloting, echoing a talking point that the Trump campaign has repeatedly hammered as it seek… [+1737 chars]',
+      'https://www.mlive.com/public-interest/2020/09/michigan-reports-441-new-coronavirus-cases-1-new-death-following-holiday-weekend.html',
   },
 ];
 
@@ -533,17 +123,17 @@ const LandingPage = () => {
   //const { newsList } = useContext(NewsContext);
   return (
     <div>
-      <Row justify="center">
+      <Row justify='center'>
         <Col xs={0} sm={0} md={20}>
-          <Carousel items={newsList.slice(0, 5)} />
+          <Carousel items={newsList.slice(0, 4)} />
         </Col>
         <Col xs={24} sm={24} md={0}>
-          <Carousel items={newsList.slice(0, 5)} small />
+          <Carousel items={newsList.slice(0, 4)} small />
         </Col>
       </Row>
-      <Row justify="center">
+      <Row justify='center'>
         <Col xs={24} sm={24} md={20}>
-          <NewsGrid items={newsList.slice(5)} />
+          <NewsGrid items={newsList.slice(4)} />
         </Col>
       </Row>
     </div>

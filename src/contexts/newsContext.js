@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import axios from '../apis/news';
 
 const NewsContext = React.createContext({
@@ -7,7 +6,6 @@ const NewsContext = React.createContext({
   selectedNew: {},
   query: { q: '' },
   category: 'general',
-  sources: [],
   country: 'us',
 });
 
@@ -16,18 +14,13 @@ export const NewsProvider = ({ children }) => {
   const [selectedNew, setSelectedNew] = useState({});
   const [query, setQuery] = useState({ q: '' });
   const [category, setCategory] = useState('general');
-  const [sources, setSources] = useState([]);
   const [country, setCountry] = useState('us');
   const [loading, setLoading] = useState(false);
 
   const getNewsList = async () => {
     setLoading(true);
-    const response = await axios.get(`/v2/top-headlines`, {
-      params: {
-        country,
-        category,
-      },
-    });
+    const response = await axios.get(`/topics/world`, {});
+
     setNewsList(response.data.articles);
     setLoading(false);
   };
@@ -35,7 +28,7 @@ export const NewsProvider = ({ children }) => {
   const searchNews = async (text) => {
     setLoading(true);
     setQuery({ ...query, q: text });
-    const response = await axios.get(`/v2/everything`, {
+    const response = await axios.get(`/search`, {
       params: {
         q: text,
       },
@@ -44,57 +37,39 @@ export const NewsProvider = ({ children }) => {
     setLoading(false);
   };
 
-  const advancedSearchNews = async (
-    text,
-    source,
-    from,
-    to,
-    language,
-    sortBy
-  ) => {
+  const advancedSearchNews = async (text, country, from, to, language) => {
     setLoading(true);
     setQuery({
       ...query,
       q: text,
-      sources: source,
-      from,
-      to,
-      language,
-      sortBy,
+      country,
+      mindate: from,
+      maxdate: to,
+      lang: language,
     });
-    const response = await axios.get(`/v2/everything`, {
+
+    const response = await axios.get(`/search`, {
       params: {
         q: text,
-        sources: source,
-        from,
-        to,
-        language,
-        sortBy,
+        country: country[0],
+        mindate: from,
+        maxdate: to,
+        lang: language,
       },
     });
     setNewsList(response.data.articles);
-    setLoading(false);
-  };
-
-  const sourcesOptions = async () => {
-    setLoading(true);
-    const response = await axios.get(`/v2/sources`);
-    setSources(response.data.sources);
     setLoading(false);
   };
 
   useEffect(() => {
     const initNewsList = async () => {
-      setLoading(true);
-      const response = await axios.get(`/v2/top-headlines`, {
+      const response = await axios.get('/search', {
         params: {
-          country: 'us',
-          category: 'general',
-          pageSize: 21,
+          q: 'covid',
+          lang: 'en',
+          image: 'required',
         },
       });
-      setNewsList(response.data.articles);
-      setLoading(true);
     };
     //initNewsList();
   }, []);
@@ -106,11 +81,11 @@ export const NewsProvider = ({ children }) => {
         selectedNew,
         query,
         category,
-        sources,
+        country,
         loading,
         getNewsList,
         searchNews,
-        sourcesOptions,
+        setCountry,
         advancedSearchNews,
         setSelectedNew,
       }}
