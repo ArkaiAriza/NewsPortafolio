@@ -7,14 +7,14 @@ const NewsGrid = ({ items }) => {
   const renderNews = () => {
     return items.map((item, index) => {
       return (
-        <Col lg={12} xs={24} key={item.title + index}>
+        <Col xxl={8} lg={12} md={24} key={item.title + index}>
           <Card item={item}></Card>
         </Col>
       );
     });
   };
 
-  return <Row style={{ padding: '' }}>{renderNews()}</Row>;
+  return <Row>{renderNews()}</Row>;
 };
 
 export default NewsGrid;

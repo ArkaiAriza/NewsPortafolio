@@ -6,7 +6,7 @@ import NewsContext from '../contexts/NewsContext';
 
 import { Col, Row } from 'antd';
 
-const newsList = [
+/* const newsList = [
   {
     description:
       'Michigan health officials reported 441 new coronavirus cases and one new COVID-19 death on Tuesday, Sept. 8. The 24-hour case addition is the fewest since Aug. 21, though case data tends to be lower ...',
@@ -117,10 +117,10 @@ const newsList = [
     url:
       'https://www.mlive.com/public-interest/2020/09/michigan-reports-441-new-coronavirus-cases-1-new-death-following-holiday-weekend.html',
   },
-];
+]; */
 
 const LandingPage = () => {
-  //const { newsList } = useContext(NewsContext);
+  const { newsList } = useContext(NewsContext);
   return (
     <div>
       <Row justify='center'>

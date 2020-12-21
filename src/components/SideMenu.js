@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import countries from '../resources/countries.json';
 import { Button, Menu } from 'antd';
 
 import styled from 'styled-components';
+import NewsContext from '../contexts/NewsContext';
+import history from '../history';
 
 const StyledSide = styled.div`
   position: absolute;
@@ -28,7 +30,15 @@ const StyledSide = styled.div`
   }
 `;
 
-const SideMenu = ({ visible }) => {
+const SideMenu = ({ visible, setSideToggle }) => {
+  const { setCountry, country, topHeadlinesNews } = useContext(NewsContext);
+
+  const handleSelectCountry = (country) => {
+    setCountry(country);
+    history.push('/topheadlines/');
+    setSideToggle(false);
+  };
+
   const renderCountries = () => {
     return countries.map((country) => {
       return (
@@ -36,6 +46,7 @@ const SideMenu = ({ visible }) => {
           key={country.Code}
           type='primary'
           style={{ display: 'block', width: '100%' }}
+          onClick={() => handleSelectCountry(country.Code)}
         >
           {country.Country}
         </Menu.Item>

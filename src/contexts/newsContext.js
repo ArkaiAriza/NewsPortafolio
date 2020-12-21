@@ -14,6 +14,7 @@ export const NewsProvider = ({ children }) => {
   const [selectedNew, setSelectedNew] = useState({});
   const [query, setQuery] = useState({ q: '' });
   const [category, setCategory] = useState('general');
+  const [topic, setTopic] = useState('breaking-news');
   const [country, setCountry] = useState('us');
   const [loading, setLoading] = useState(false);
 
@@ -31,6 +32,19 @@ export const NewsProvider = ({ children }) => {
     const response = await axios.get(`/search`, {
       params: {
         q: text,
+        country: country,
+      },
+    });
+    setNewsList(response.data.articles);
+    setLoading(false);
+  };
+
+  const topHeadlinesNews = async (text) => {
+    setLoading(true);
+    const response = await axios.get(`/top-headlines`, {
+      params: {
+        country: country,
+        topic: topic,
       },
     });
     setNewsList(response.data.articles);
@@ -51,7 +65,7 @@ export const NewsProvider = ({ children }) => {
     const response = await axios.get(`/search`, {
       params: {
         q: text,
-        country: country[0],
+        country: country,
         mindate: from,
         maxdate: to,
         lang: language,
@@ -61,17 +75,17 @@ export const NewsProvider = ({ children }) => {
     setLoading(false);
   };
 
+  const initNewsList = async () => {
+    const response = await axios.get('/top-headlines', {
+      params: {
+        lang: 'en',
+      },
+    });
+    setNewsList(response.data.articles);
+  };
+
   useEffect(() => {
-    const initNewsList = async () => {
-      const response = await axios.get('/search', {
-        params: {
-          q: 'covid',
-          lang: 'en',
-          image: 'required',
-        },
-      });
-    };
-    //initNewsList();
+    initNewsList();
   }, []);
 
   return (
@@ -83,11 +97,15 @@ export const NewsProvider = ({ children }) => {
         category,
         country,
         loading,
+        topic,
+        setCountry,
+        setSelectedNew,
+        setTopic,
         getNewsList,
         searchNews,
-        setCountry,
         advancedSearchNews,
-        setSelectedNew,
+        topHeadlinesNews,
+        initNewsList,
       }}
     >
       {children}

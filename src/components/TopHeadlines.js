@@ -4,13 +4,15 @@ import NewsGrid from './NewsGrid';
 import { Row, Col } from 'antd';
 import NewsContext from '../contexts/NewsContext';
 
-const ResultsPage = ({ match }) => {
-  const { newsList, searchNews } = useContext(NewsContext);
-  const [term, setTerm] = useState('');
+const ResultsPage = () => {
+  const { newsList, topHeadlinesNews, topic, country } = useContext(
+    NewsContext
+  );
+  console.log(newsList);
 
   useEffect(() => {
-    searchNews(match.params.search);
-  }, []);
+    topHeadlinesNews();
+  }, [topic, country]);
 
   return (
     <div>

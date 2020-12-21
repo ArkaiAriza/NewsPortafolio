@@ -63,9 +63,11 @@ export default SearchBar;
 const styles = {
   SearchBox: {
     display: 'flex',
+    flexWrap: 'wrap',
     justifyContent: 'space-between',
     margin: '1rem',
-    padding: '1rem',
+    height: '80px',
+    alignItems: 'center',
   },
-  searchBar: { maxWidth: '80%', marginRight: '1rem' },
+  searchBar: { flex: '1 0 50%', marginRight: '1rem' },
 };

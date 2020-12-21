@@ -21,6 +21,11 @@ const Card = ({ item }) => {
       }}
       cover={
         <img
+          style={{
+            objectFit: 'cover',
+            minHeight: '24vh',
+            maxHeight: '24vh',
+          }}
           alt={item.title}
           src={
             item.image
